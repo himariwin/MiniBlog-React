@@ -40,16 +40,27 @@
 
 @media (max-width: 500px) {
     .imgg {
+        margin-left: 1em;
         max-width: 80%;
         margin-bottom: .5em;
     }
 
     .post_container h1 {
+        max-width: 90%;
+        margin-left: 1.1em;
         margin-bottom: .5em;
-        font-size: 22px;
+        font-size: 20px;
+    }
+    .body {
+        text-align: justify;
+        margin-left: 1em;
+        max-width: 90%;
     }
     .post_container p {
-      margin-bottom: .5em;
+      margin-bottom: 1em;
       overflow-wrap: break-word;
+    }
+    .post_container .tags {
+        margin-left: 1em;
     }
 }
