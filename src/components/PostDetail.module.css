@@ -43,6 +43,8 @@
     }
 
     .post_detail h2 {
+        font-size: 18px;
+        max-width: 94%;
         margin: 1px 0px .4em 20px;
     }
 
