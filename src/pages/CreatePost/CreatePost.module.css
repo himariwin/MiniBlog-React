@@ -1,0 +1,23 @@
+.create_post {
+    margin-top: 7em;
+    text-align: center;
+    background-color: #F9F5F6;
+}
+
+.create_post h2 {
+    margin-bottom: .5em;
+    font-size: 1.6em;
+    background-color: #F9F5F6;
+}
+
+.create_post p {
+    color: #e67da4;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 500px) {
+    .create_post p {
+        margin-left: 2em;
+        max-width: 80%;
+    }
+}

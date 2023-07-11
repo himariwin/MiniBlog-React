@@ -1,0 +1,28 @@
+.about {
+    margin-top: 7em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about p {
+    color: #aaa;
+    margin-bottom: 2em;
+}
+
+.about a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+
+.about h2 {
+    margin-bottom: .5em;
+}
+
+@media (max-width: 500px) {
+    .about p {
+        max-width: 90%;
+    }
+}

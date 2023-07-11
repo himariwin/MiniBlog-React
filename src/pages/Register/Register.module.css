@@ -1,0 +1,14 @@
+.register {
+    text-align: center;
+}
+
+.register p {
+    color: #aaa;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        color: #ee4784;
+        margin-top: 3em;
+    }
+}

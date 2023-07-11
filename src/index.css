@@ -1,0 +1,148 @@
+body {
+    background-color: #F9F5F6;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: "Montserrat", sans-serif;
+    color: #e990b1;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* form styles */
+
+form {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+label span{
+    margin-bottom: .3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: .8em 0;
+    background-color: transparent;
+}
+
+.btn {
+    margin-top: 1.5em;
+    background-color: #bb0d4d;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 120px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+.btn.btn-dark {
+    background-color: #ee4784;
+    border-radius: 0;
+}
+
+.btn.btn-outline {
+    margin-left: 17.5em;
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    border: 1px solid #000;
+    padding: 7px 30px;
+}
+
+.btn.btn-dashboard {
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    border: 1px solid #000;
+    padding: 7px 30px;
+}
+
+.btn-personalized {
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    border: 1px solid #000;
+    padding: 8px 30px;
+}
+
+.btn:hover {
+    background-color: #a9005d;
+    color: #fff;
+}
+
+.btn.btn-outline:hover {
+    background-color: #000;
+}
+
+.btn.btn-danger:hover {
+    background-color: #dc3545;
+}
+
+button[disabled] {
+    background-color: #aaa;
+}
+
+.container .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #F5C6CB;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    a,
+    nav button {
+        padding: 5px;
+    }
+
+    input,
+    textarea {
+        margin-right: 1px;
+    }
+
+    .btn.btn-outline {
+        border-radius: 7px;
+        color: #ee4784;
+        border: 1px solid #a9005d;
+        margin-left: 20px;
+    }
+
+    form {
+        max-width: 70%;
+    }
+
+    label span{
+        font-size: 18px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-family: "Poppins", sans-serif;
+        letter-spacing: .5px;
+        color: #e990b1;
+    }
+}

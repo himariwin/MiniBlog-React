@@ -1,0 +1,135 @@
+.navbar {
+    background-color: white;
+    display: flex;
+    box-shadow: rgba(0, 0, 0.15, 0) 0px 0px 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+}
+
+.brand {
+    font-size: 1.2em;
+}
+  
+.brand span {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+  
+.links_list {
+    display: flex;
+    list-style: none;
+}
+  
+.links_list li a {
+    padding: 0.4em 0.6em;
+}
+  
+.active {
+    background-color: #ee4784;
+    color: #fff;
+}
+
+a,
+nav button {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: #d74077;
+    transition: .4s;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+a:hover,
+nav button:hover {
+    color: #bbb;
+}
+
+
+.header__menu_hamburguer, .container__btn {
+    display: none;
+}
+
+
+
+@media (max-width: 500px) {
+    input[type="checkbox"]:checked ~ .links_list {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+    .links_list {
+        display: none;
+        width: 40%;
+        margin-top: 1em;
+        margin-left: 6px;
+    }
+    .links_list li a {
+        max-width: 10%;
+        padding: 0.4em 0.2em;
+    }
+    .brand {
+        width: 240px;
+        align-items: center;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .container__img {
+        padding: 1em;
+    }
+    .container__btn:checked~.container__label>.header__menu-hamburguer {
+        background-image: url ("../assets/Menu Aberto.png");
+    }
+    .container__btn {
+        display: none;
+    }
+    .header__menu_hamburguer {
+        margin-bottom: 1em;
+        margin-left: 2em;
+        margin-top: 2em;
+        width: 24px;
+        height: 24px;
+        background-image: url("../assets/Menu.svg");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        position: relative;
+    }
+    .container__btn:checked ~ .container__label {
+        background: white;
+    }
+    .header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu_list {
+        position: absolute;
+        top: 10%;
+        width: 60vw;
+    }
+    .menu_list__item {
+        padding: 1em;
+        background-color: white;
+    }
+    .menu_list__link {
+        background: #ee4784;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+
+    .container__btn:checked~.container__label>.header__menu-hamburguer{
+        display: none;
+    }
+}
